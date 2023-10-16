@@ -9,12 +9,22 @@
             ImagePost imagePost1 = new ImagePost("Check out my new shoes", "Denis Panjuta",
                 "https://image.com/shoes", true);
 
+            VideoPost videoPost1 = new VideoPost("FailVideo", "Denis Panjuta",
+                "https://video.com/failvideo", true, 10);
+
             Console.WriteLine(imagePost1.ToString());
+            Console.WriteLine(videoPost1.ToString());
+
+            videoPost1.Play();
+            Console.WriteLine("Press any key to stop the video!");
+            Console.ReadKey();
+            videoPost1.Stop();
+
             Console.ReadLine();
         }
 
         // CHALLENGE add a deriving Class "VideoPost" with a property VideoURL, Length.
-        
+
         // create the required constructors to create a VideoPost
         // adjust th ToString() method accordingly
         // create an istance of VideoPost
