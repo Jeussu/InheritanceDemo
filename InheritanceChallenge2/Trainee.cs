@@ -22,7 +22,7 @@ namespace InheritanceChallenge2
             Console.WriteLine("I'm learning for {0} hours!", SchoolHours);
         }
 
-        public void Work()
+        public new void Work()
         {
             Console.WriteLine("I'm work for {0} hours", WorkingHours);
         }
